@@ -250,7 +250,47 @@ fun main() {
 ```
 
 
-## 5. Polimorfismo
+## 5. Abstracción
+La abstracción consiste en quedarse con las características importantes de un
+objeto y esconder los detalles que no necesitamos conocer. Es como conducir un
+coche: usamos el volante y los pedales, pero no necesitamos saber cómo funciona
+el motor por dentro.
+
+En Kotlin podemos crear una clase `abstract`, que sirve como una plantilla
+general. No podemos crear directamente un objeto de esa clase; primero debemos
+crear una clase más concreta, como `Moto` o `Coche`.
+
+```kotlin
+abstract class VehiculoAbstracto(val marca: String, val modelo: String) {
+    // Cada tipo de vehículo debe indicar cuántas ruedas tiene
+    abstract val numeroDeRuedas: Int
+
+    fun mostrarDatos() {
+        println("$marca $modelo tiene $numeroDeRuedas ruedas")
+    }
+}
+
+class MotoAbstracta(marca: String, modelo: String) : VehiculoAbstracto(marca, modelo) {
+    override val numeroDeRuedas = 2
+}
+
+class CocheAbstracto(marca: String, modelo: String) : VehiculoAbstracto(marca, modelo) {
+    override val numeroDeRuedas = 4
+}
+
+fun main() {
+    val moto = MotoAbstracta("Honda", "CB125")
+    moto.mostrarDatos()
+
+    val coche = CocheAbstracto("Toyota", "Yaris")
+    coche.mostrarDatos()
+}
+```
+
+La clase abstracta guarda lo que todos los vehículos comparten y deja que cada
+tipo indique su número de ruedas.
+
+## 6. Polimorfismo
 El polimorfismo permite que los objetos de diferentes clases respondan al mismo
 mensaje de manera diferente. En Kotlin, el polimorfismo se logra mediante la
 herencia y la sobreescritura de métodos.
@@ -285,7 +325,7 @@ fun main() {
 tener una acción `moverse()`. La moto y el coche implementan esa misma acción de
 forma diferente. Esto demuestra el concepto de polimorfismo en Kotlin.
 
-## 6. Encapsulamiento
+## 7. Encapsulamiento
 El encapsulamiento es el ocultamiento de los detalles de implementación de una
 clase y solo mostrando las operaciones públicas. En Kotlin, se utilizan los
 modificadores de acceso public, private, protected e internal para controlar el
@@ -331,7 +371,7 @@ class VehiculoSeguro {
 Como `velocidad` es `private`, solo el propio vehículo puede modificarla.
 
 
-## 7. Scope (Ámbito)
+## 8. Scope (Ámbito)
 En programación, el término "scope" se refiere al alcance o la visibilidad de una
 variable dentro de un programa. El scope determina dónde una variable es válida y
 accesible dentro del código. Hay varios niveles de scope en Kotlin:
@@ -383,7 +423,7 @@ fun mostrarMarcaFavorita() {
 ```
 
 
-## 8. Conclusiones
+## 9. Conclusiones
 La programación orientada a objetos es un paradigma poderoso que facilita el
 desarrollo de software modular, escalable y mantenible. Kotlin ofrece características
 avanzadas de POO que permiten a los desarrolladores crear aplicaciones robustas y
