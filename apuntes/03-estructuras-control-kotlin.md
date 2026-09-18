@@ -7,7 +7,10 @@ decisiones, repetir acciones, o seleccionar entre múltiples opciones durante la
 ejecución del programa.
 
 ## 1. Estructuras de decisión:
-- if/else: El condicional if evalúa una expresión booleana y ejecuta un bloque de
+
+### - **if/else:** 
+
+- El condicional if evalúa una expresión booleana y ejecuta un bloque de
 código si esa expresión es verdadera. El bloque else se ejecuta si la expresión es
 falsa. El bloque else es opcional.
 ```kotlin
@@ -19,7 +22,9 @@ if (x > 5) {
 }
 ```
 
-- when (similar al switch en otros lenguajes): La expresión when es una forma más
+### **- when:** (similar al switch en otros lenguajes): 
+
+La expresión when es una forma más
 expresiva de manejar múltiples casos que if-else. Permite comparar el valor de
 una variable con varios casos y ejecutar el bloque de código correspondiente al
 primer caso que coincida.
@@ -46,7 +51,10 @@ println("La categoría de edad es: $categoria")
 ```
 
 ## 2. Estructuras de iteración:
-- while: La estructura de bucle while ejecuta repetidamente un bloque de código
+
+### **- while:** 
+
+La estructura de bucle while ejecuta repetidamente un bloque de código
 mientras una condición especificada sea verdadera. Es importante asegurarse de
 que la condición en algún momento se vuelva falsa para evitar bucles infinitos.
 ```kotlin
@@ -57,7 +65,9 @@ while (i < 5) {
 }
 ```
 
-- do-while: También existe la estructura de control do-while, es similar a while,
+### **- do-while:** 
+
+También existe la estructura de control do-while, es similar a while,
 pero garantiza que el bloque de código se ejecute al menos una vez, incluso si la
 condición de bucle es falsa desde el principio.
 ```kotlin
@@ -68,7 +78,9 @@ do {
 } while (i < 5)
 ```
 
-- for: El bucle for se utiliza para iterar sobre una colección de elementos, como un
+### **- for:** 
+
+El bucle for se utiliza para iterar sobre una colección de elementos, como un
 rango de números, una matriz o cualquier otro tipo de colección iterable.
 ```kotlin
 val numbers = arrayOf(1, 2, 3, 4, 5)
@@ -77,7 +89,8 @@ for (number in numbers) {
 }
 ```
 
-- break: La instrucción break se utiliza para salir de un bucle.
+### **- break:** 
+La instrucción break se utiliza para salir de un bucle.
 ```kotlin
 for (i in 1..5) {
     if (i == 3) {
@@ -87,7 +100,8 @@ for (i in 1..5) {
 }
 ```
 
-- continue: La instrucción continue interrumpe una iteración y continúa con la
+### **- continue:** 
+La instrucción continue interrumpe una iteración y continúa con la
 siguiente iteración en el bucle.
 ```kotlin
 for (i in 1..5) {
@@ -99,7 +113,10 @@ for (i in 1..5) {
 ```
 
 ## 3. Otras estructuras:
-- with: El bloque with permite acceder y modificar propiedades de un objeto sin
+
+### **- with:**
+
+El bloque with permite acceder y modificar propiedades de un objeto sin
 tener que repetir el nombre del objeto en cada línea. Es útil para realizar
 múltiples operaciones sobre un mismo objeto.
 ```kotlin

@@ -1,6 +1,6 @@
-# Introducción a Kotlin: Por dónde empezar
+# Introducción a Kotlin: 
 
-Kotlin es un lenguaje de programación moderno y conciso que se ejecuta en la
+Por dónde empezar Kotlin es un lenguaje de programación moderno y conciso que se ejecuta en la
 máquina virtual de Java (JVM). Es un lenguaje multipropósito que puede ser utilizado
 para desarrollar una amplia variedad de aplicaciones, desde aplicaciones móviles
 hasta aplicaciones web y backend. Kotlin combina la seguridad y la interoperabilidad
@@ -14,9 +14,9 @@ Para comenzar a programar en Kotlin, primero necesitas instalar un entorno de
 desarrollo integrado o IDE por sus siglas en ingles. Existen varias opciones, pero el
 más recomendable es IntelliJ IDEA, que es un IDE muy popular y poderoso
 compatible con Kotlin. Puedes descargar IntelliJ IDEA desde su sitio web oficial:
-JetBrains IntelliJ IDEA.
+[JetBrains IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/).
 Para desarrollar aplicaciones móviles, podemos optar por una solución más
-especializada en este tipo de proyectos, Android Studio, una solución montada sobre
+especializada en este tipo de proyectos, [Android Studio](https://developer.android.com/studio?hl=es-419), una solución montada sobre
 IntelliJ IDEA, pero con herramientas que ayudan a desarrollar aplicaciones Android
 de manera más fácil. Puedes descargar Android Studio desde su sitio web oficial:
 Android Studio.
@@ -75,4 +75,5 @@ fun main() {
 ```
 
 
-## 7. Recursos adicionales: Documentación oficial de Kotlin.
+## 7. Recursos adicionales: 
+[Documentación oficial de Kotlin.](https://kotlinlang.org/)

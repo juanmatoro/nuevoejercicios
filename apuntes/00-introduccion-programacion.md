@@ -4,26 +4,27 @@ La programación es el arte de dar instrucciones a una computadora para que real
 tareas específicas. En su esencia, consiste en comunicarse con la máquina utilizando
 un lenguaje especializado que comprende instrucciones precisas y lógicas.
 
-## 1. Concepto de Algoritmo: Un algoritmo es un conjunto de pasos definidos y
-ordenados que guían a la computadora para resolver un problema o realizar una
+## 1. Concepto de Algoritmo: 
+Un algoritmo es un conjunto de pasos definidos y ordenados que guían a la computadora para resolver un problema o realizar una
 tarea. Es como una receta que sigue la computadora para lograr un resultado
 deseado.
 
-## 2. Lenguajes de Programación: Los lenguajes de programación son sistemas de
-comunicación entre humanos y computadoras. Estos lenguajes utilizan una sintaxis
+## 2. Lenguajes de Programación: 
+Los lenguajes de programación son sistemas de comunicación entre humanos y computadoras. Estos lenguajes utilizan una sintaxis
 específica para escribir instrucciones que la computadora puede entender y ejecutar.
 
-## 3. Abstracción: La abstracción es una herramienta fundamental en programación.
+## 3. Abstracción: 
+### La abstracción es una herramienta fundamental en programación.
 Permite simplificar problemas complejos dividiéndolos en partes más pequeñas y
 manejables. Esto se logra mediante la creación de funciones y objetos que
 representan conceptos del mundo real.
 
-## 4. Resolución de Problemas: La programación implica resolver problemas de manera
-lógica y estructurada. Requiere identificar el problema, diseñar una solución,
+## 4. Resolución de Problemas: 
+La programación implica resolver problemas de manera lógica y estructurada. Requiere identificar el problema, diseñar una solución,
 implementarla en código y probarla para asegurarse de que funcione correctamente.
 
-## 5. Práctica y Experimentación: La programación es un proceso creativo que requiere
-práctica constante y experimentación. A medida que se adquiere experiencia, se
+## 5. Práctica y Experimentación: 
+La programación es un proceso creativo que requiere práctica constante y experimentación. A medida que se adquiere experiencia, se
 desarrolla un mejor entendimiento de los conceptos y se vuelve más hábil en la
 resolución de problemas.
 
@@ -84,8 +85,8 @@ mientras contador < 10 hacer
     contador = contador + 1
 fin mientras
 
-## 4. Funciones y Modularidad: Las funciones son bloques de código que realizan una
-tarea específica. La modularidad es el principio de dividir un programa en partes más
+## 4. Funciones y Modularidad: 
+Las funciones son bloques de código que realizan una tarea específica. La modularidad es el principio de dividir un programa en partes más
 pequeñas y manejables. Por ejemplo:
 funcion saludar(nombre)
     Imprimir "Hola, " + nombre
@@ -96,12 +97,12 @@ fin funcion
 saludar("Ana")
 ```
 
-### Nota: Los comentarios son líneas de texto que se utilizan para hacer aclaraciones en
-el código. Estas líneas son ignoradas por el compilador o intérprete y no ejecutaran
+### Nota: Comentarios
+Los comentarios son líneas de texto que se utilizan para hacer aclaraciones en el código. Estas líneas son ignoradas por el compilador o intérprete y no ejecutaran
 ninguna instrucción. Por ejemplo: // Llamar a la función es un comentario.
 
-## 5. Arreglos y Colecciones: Los arreglos y otras estructuras de datos permiten
-almacenar y manipular colecciones de datos. Por ejemplo:
+## 5. Arreglos y Colecciones: 
+Los arreglos (Arrays) y otras estructuras de datos permiten almacenar y manipular colecciones de datos. Por ejemplo:
 Arreglo numeros = [1, 2, 3, 4, 5]
 
 para cada numero en numeros hacer
