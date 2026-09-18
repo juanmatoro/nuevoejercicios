@@ -10,9 +10,15 @@ Una clase es un plano para crear objetos, define las propiedades y métodos
 que los objetos de esa clase pueden tener. Los objetos son instancias de una
 clase, es decir, representan casos concretos de la clase.
 ### 1.2. Propiedades y métodos
-- Propiedades: Son variables asociadas a un objeto que representan su estado,
+
+#### - Propiedades: 
+
+Son variables asociadas a un objeto que representan su estado,
 características o propiedades.
-- Métodos: Son funciones asociadas a un objeto que representan su
+
+#### - Métodos: 
+
+Son funciones asociadas a un objeto que representan su
 comportamiento.
 ### 1.3. Ventajas de la POO
 - Reutilización de código.
@@ -22,7 +28,9 @@ comportamiento.
 ## 2. Clases y Objetos en Kotlin
 En Kotlin, la definición de una clase es similar a otros lenguajes orientados a objetos
 como Java o C#. Para definir una clase, utilizaremos la palabra clave class.
-- Definir clase:
+
+### - Definir clase:
+
 ```kotlin
 class Persona {
     var nombre: String = ""
@@ -35,7 +43,8 @@ class Persona {
 ```
 
 
-- Crear objeto:
+### - Crear objeto:
+
 ```kotlin
 fun main() {
     val persona1 = Persona()
