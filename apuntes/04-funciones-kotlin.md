@@ -98,7 +98,44 @@ podemos simplificar su sintaxis:
 fun duplicar(numero: Int): Int = numero * 2
 ```
 
-## 6. Sobrecarga de funciones:
+## 6. Funciones recursivas
+
+Una función recursiva es una función que se llama a sí misma para resolver una
+versión más pequeña del mismo problema. Es como bajar una escalera: para llegar al
+suelo das un paso, luego otro paso más pequeño, y al final llegas al último escalón.
+
+Toda función recursiva necesita dos cosas:
+
+- **Caso base:** la respuesta más pequeña que ya conocemos. Es la señal para parar.
+- **Paso recursivo:** llamar otra vez a la función, pero con un problema más pequeño.
+
+El factorial es un ejemplo muy claro. El factorial de `4` es `4 × 3 × 2 × 1`, que da
+`24`. Para calcularlo, la función pide el factorial del número anterior:
+
+```kotlin
+fun factorial(n: Int): Int {
+    // Caso base: ya no hay que seguir bajando.
+    if (n == 1) return 1
+
+    // Paso recursivo: n se hace más pequeño en cada llamada.
+    return n * factorial(n - 1)
+}
+```
+
+Si llamamos a `factorial(4)`, Kotlin hace este recorrido:
+
+```text
+factorial(4) → 4 × factorial(3)
+factorial(3) → 3 × factorial(2)
+factorial(2) → 2 × factorial(1)
+factorial(1) → 1  ← caso base: paramos
+```
+
+Después las respuestas vuelven hacia atrás: `2 × 1 = 2`, después `3 × 2 = 6` y por
+último `4 × 6 = 24`. Si una función recursiva no tiene caso base, nunca sabe cuándo
+parar. Puedes ver este mismo ejemplo en el [ejercicio 7](../src/ejerciciosBasicos/ejercicio7.kt).
+
+## 7. Sobrecarga de funciones:
 En Kotlin, podemos definir múltiples funciones con el mismo nombre dentro de
 la misma clase, pero con diferentes conjuntos de parámetros. Esto se conoce
 como sobrecarga de funciones. El compilador de Kotlin determinará qué
