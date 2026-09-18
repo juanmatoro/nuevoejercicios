@@ -133,7 +133,9 @@ with(person) {
 println("Nombre: ${person.name}, Edad: ${person.age}")
 ```
 
-- try/catch: El bloque try/catch/finally es una estructura utilizada en la
+### **- try/catch:** 
+
+El bloque try/catch/finally es una estructura utilizada en la
 programación para manejar excepciones, que son situaciones inesperadas que
 pueden ocurrir durante la ejecución de un programa provocando errores.
 ```kotlin
@@ -151,14 +153,23 @@ se produjo una excepción o no")
 }
 ```
 ### Explicación:
-  - try: En este bloque se coloca el código que podría generar una excepción.
+
+####   - try: 
+
+En este bloque se coloca el código que podría generar una excepción.
 El programa intentará ejecutar este código de manera normal.
-  - catch: Si se produce una excepción dentro del bloque try, el control se
+
+####   - catch: 
+
+Si se produce una excepción dentro del bloque try, el control se
 transfiere al bloque catch. Aquí se maneja la excepción, es decir, se
 especifica qué hacer en caso de que ocurra un error. Puedes tener
 múltiples bloques catch para manejar diferentes tipos de excepciones o
 errores.
-  - finally: Es un bloque opcional, y si lo añadimos se ejecutará siempre, se
+
+####   - finally: 
+
+Es un bloque opcional, y si lo añadimos se ejecutará siempre, se
 haya producido una excepción o no. Se utiliza comúnmente para realizar
 limpieza de recursos, como cerrar archivos o conexiones de bases de
 datos.

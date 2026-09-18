@@ -17,11 +17,22 @@ fun nombreDeLaFuncion(parametro: Tipo): TipoDeRetorno {
 }
 ```
 ### Explicación:
-- nombreDeLaFuncion: Es el nombre que le damos a nuestra función.
-- parámetro: Son los datos que la función necesita para llevar a cabo su tarea.
+
+#### - nombreDeLaFuncion: 
+
+Es el nombre que le damos a nuestra función.
+
+#### - parámetro: Son los datos que la función necesita para llevar a cabo su tarea.
+
 Pueden ser opcionales y se separan mediante coma.
-- Tipo: Es el tipo de dato que espera la función para cada parámetro.
-- TipoDeRetorno: Es el tipo de dato que devuelve la función después de
+
+#### - Tipo: 
+
+Es el tipo de dato que espera la función para cada parámetro.
+
+#### - TipoDeRetorno: 
+
+Es el tipo de dato que devuelve la función después de
 realizar sus operaciones y se indica mediante la palabra clave return.
 ### Ejemplo de funciones simples:
 ```kotlin
@@ -127,7 +138,8 @@ la segunda función calcula el volumen de un prisma rectangular dado su base, al
 y profundidad. Ambas funciones comparten el mismo nombre, pero tienen
 diferentes conjuntos de parámetros, lo que permite su sobrecarga.
 
-- Conclusión:
+### - Conclusión:
+
 La sobrecarga de funciones nos permite escribir código más expresivo y flexible, ya
 que podemos utilizar el mismo nombre de función para realizar diferentes tareas,
 siempre y cuando los conjuntos de parámetros sean diferentes.
