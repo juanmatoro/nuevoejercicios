@@ -9,20 +9,44 @@ Requerimiento: El programa debe ser sensible a mayúsculas y minúsculas.
 
 fun main() {
     println("- Ejercicio 8")
-    println("Introduce una cadena de texto:")
+    println("Introduce un texto:")
     val cadena = readln()
     val numeroVocales = contarVocales(cadena)
-    println("La cadena contiene $numeroVocales vocales.")
+    val vocalesEncontradas = obtenerVocales(cadena)
+    println("El texto: $cadena tiene $numeroVocales vocales.")
+    println("Las vocales encontradas son: ${vocalesEncontradas.joinToString(", ")}")
 
 }
 
 fun contarVocales(cadena: String): Int {
     var contador = 0
+
+    var vocales = arrayOf("a","e","i","o","u","A","E","I","O","U")
+
+//    for (caracter in cadena) {
+//        when (caracter) {
+//            'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' -> contador++
+//
+//
+//        }
+//    }
+
     for (caracter in cadena) {
-        when (caracter) {
-            'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' -> contador++
+        if (vocales.contains(caracter.toString())) {
+            contador++
         }
     }
     return contador
 }
 
+fun obtenerVocales(cadena: String): List<Char> {
+    val vocalesEncontradas = mutableListOf<Char>()
+
+    for (caracter in cadena) {
+        when (caracter) {
+            'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' -> vocalesEncontradas.add(caracter)
+        }
+    }
+
+    return vocalesEncontradas
+}

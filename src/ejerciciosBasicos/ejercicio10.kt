@@ -21,8 +21,10 @@ fun main() {
     println("El mayor de los tres números es: $mayor")
 }
 
+
+/* Solución anterior:
 fun determinarMayor(num1: Int, num2: Int, num3: Int): Int {
- if (num1 == num2 && num3 == num1) {
+    if (num1 == num2 && num3 == num1) {
         println("Son iguales")
         return num1
     } else if (num1 >= num2 && num1 >= num3) {
@@ -31,6 +33,25 @@ fun determinarMayor(num1: Int, num2: Int, num3: Int): Int {
         return num2
     } else {
         return num3
- }
+    }
 }
+*/
+
+fun determinarMayor(num1: Int, num2: Int, num3: Int): Int {
+    var mayor = num1
+
+    if (num1 == num2 && num2 == num3) {
+        println("Son iguales")
+    }
+    if (num2 > mayor) {
+        mayor = num2
+    }
+    if (num3 > mayor) {
+        mayor = num3
+    }
+
+
+    return mayor
+}
+
 
